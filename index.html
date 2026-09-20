@@ -1,60 +1,175 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recyclage Lilian</title>
+
+  <title>Lilian D - Ferraille, Épaviste et Débarras en Picardie</title>
+
+  <meta name="description" content="Lilian D - Enlèvement de ferrailles et métaux, épaviste, découpe de cuves, engins agricoles, poids lourds, autocars et débarras en Picardie et régions voisines.">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f7f3;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
       color: #222;
-      text-align: center;
     }
 
     header {
-      background: #16833b;
+      background: linear-gradient(135deg, #111 0%, #222 55%, #f2c400 55%, #f2c400 100%);
       color: white;
-      padding: 35px 20px;
+      padding: 35px 20px 45px;
+      text-align: center;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 38px;
+    header h1 {
+      font-size: 42px;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 20px;
+      margin: 8px 0;
+      font-weight: bold;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .hero img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
     }
 
     section {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 25px;
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 30px 20px;
       background: white;
-      border-radius: 15px;
+      border-radius: 18px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     }
 
     h2 {
-      color: #16833b;
+      text-align: center;
+      font-size: 30px;
+      color: #111;
+      margin-top: 0;
+    }
+
+    h2 span {
+      color: #e0b600;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.7;
     }
 
     .services {
-      text-align: left;
-      line-height: 1.8;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .service {
+      background: #111;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
       font-size: 17px;
+      line-height: 1.5;
+      border-left: 6px solid #f2c400;
+    }
+
+    .service strong {
+      color: #f2c400;
+    }
+
+    .zone {
+      text-align: center;
+      font-size: 19px;
+      line-height: 1.7;
     }
 
     .contact {
-      background: #e2f2e7;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      font-size: 19px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px;
+      padding: 15px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .phone {
+      background: #f2c400;
+      color: #111;
+    }
+
+    .email {
+      background: white;
+      color: #111;
     }
 
     footer {
       background: #16833b;
       color: white;
-      padding: 20px;
+      text-align: center;
+      padding: 25px 15px;
       margin-top: 30px;
+    }
+
+    @media (max-width: 650px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .contact a {
+        display: block;
+        margin: 10px auto;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
@@ -62,36 +177,93 @@
 <body>
 
   <header>
-    <h1>Recyclage Lilian</h1>
-    <p>Recyclage et valorisation des matériaux</p>
+    <h1>Lilian D</h1>
+    <p>Ferraille • Épaviste • Débarras</p>
+    <p>Picardie et régions voisines</p>
   </header>
 
+  <div class="hero">
+    <img src="Snapchat-1370110929.jpg" alt="Lilian D - Enlèvement de ferraille et métaux">
+  </div>
+
   <section>
-    <h2>Bienvenue</h2>
-    <p>
-      Bienvenue sur notre site. Nous proposons des services de recyclage
-      et de valorisation des matériaux pour les particuliers et les professionnels.
+    <h2>Bienvenue chez <span>Lilian D</span></h2>
+
+    <p class="intro">
+      Professionnel de l'enlèvement de ferrailles, métaux et épaves.
+      Nous intervenons auprès des particuliers et des professionnels
+      pour vos travaux de récupération, découpe et débarras.
     </p>
   </section>
 
   <section>
-    <h2>Nos services</h2>
+    <h2>Nos <span>services</span></h2>
+
     <div class="services">
-      ♻️ Recyclage et récupération<br>
-      ♻️ Valorisation des matériaux<br>
-      ♻️ Collecte et enlèvement<br>
-      ♻️ Services pour particuliers et professionnels
+
+      <div class="service">
+        ♻️ <strong>Ferrailles et métaux</strong><br>
+        Enlèvement de tous types de ferrailles et métaux.
+      </div>
+
+      <div class="service">
+        🚗 <strong>Épaviste</strong><br>
+        Enlèvement de véhicules et épaves.
+      </div>
+
+      <div class="service">
+        🔧 <strong>Découpe de cuves</strong><br>
+        Découpe et enlèvement de cuves.
+      </div>
+
+      <div class="service">
+        🚜 <strong>Engins agricoles</strong><br>
+        Découpe d'engins agricoles.
+      </div>
+
+      <div class="service">
+        🚛 <strong>Poids lourds et autocars</strong><br>
+        Découpe et enlèvement de poids lourds et autocars.
+      </div>
+
+      <div class="service">
+        🏠 <strong>Débarras</strong><br>
+        Cave, grenier, maison et tous types de locaux industriels.
+      </div>
+
     </div>
   </section>
 
+  <section>
+    <h2>Zone d'<span>intervention</span></h2>
+
+    <p class="zone">
+      📍 Intervention en <strong>Picardie</strong> et dans les régions
+      environnantes, notamment dans l'<strong>Aisne</strong> et la
+      <strong>Somme</strong>.
+    </p>
+  </section>
+
   <section class="contact">
-    <h2>Contact</h2>
-    <p>Pour toute demande de renseignement ou de devis, contactez-nous.</p>
+    <h2>Contactez <span>Lilian D</span></h2>
+
+    <p>
+      Pour un renseignement, un devis ou une demande d'intervention,
+      contactez-nous directement.
+    </p>
+
+    <a class="phone" href="tel:0676969231">
+      📞 06 76 96 92 31
+    </a>
+
+    <a class="email" href="mailto:liliandurant60@gmail.com">
+      ✉️ liliandurant60@gmail.com
+    </a>
   </section>
 
   <footer>
-    © 2026 Recyclage Lilian - Tous droits réservés
+    © 2026 Lilian D - Ferraille, Épaviste et Débarras
   </footer>
 
 </body>
-  </html>
+</html>
